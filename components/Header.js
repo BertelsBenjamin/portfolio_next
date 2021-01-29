@@ -13,16 +13,20 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
+            <i className='mi-user'></i>
             <Link href='/about'>About</Link>
           </li>
           <li>
+            <i className='mi-clipboard-list'></i>
             <Link href='/work'>Work</Link>
           </li>
           <li>
+            <i className='mi-book'></i>
             <Link href='/articles'>Articles</Link>
           </li>
           <li>
-            <Link href='/contact.html'>Contact</Link>
+            <i className='mi-megaphone'></i>
+            <Link href='/contact'>Contact</Link>
           </li>
         </ul>
       </nav>

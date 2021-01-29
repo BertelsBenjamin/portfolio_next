@@ -8,6 +8,9 @@
   width: 100%;
   position: absolute;
   bottom: 100px;
+  @media screen and (max-height: 590px) {
+    bottom: 20px;
+  }
   a {
     font-weight: 900;
     width: 24px;

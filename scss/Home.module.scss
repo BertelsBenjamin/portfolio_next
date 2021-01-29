@@ -2,12 +2,11 @@
 .heading {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 28px 0;
-  height: 70vh;
+  height: auto;
+  margin-top: 15vh;
   @media screen and (max-width: 400px) {
-    height: 50vh;
+    height: auto;
   }
   .title {
     font-size: 100px;
@@ -26,11 +25,13 @@
     }
   }
   .subtitle {
-    margin: 28px 0;
+    padding: 28px 0;
     font-style: italic;
-    text-shadow: 10px;
     @media screen and (max-width: 400px) {
       font-size: 18px;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 14px;
     }
   }
   .microtitle {
