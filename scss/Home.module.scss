@@ -1,0 +1,41 @@
+@import './main/variables';
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0;
+  height: 70vh;
+  @media screen and (max-width: 400px) {
+    height: 50vh;
+  }
+  .title {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 100px;
+    font-feature-settings: 'kern';
+    letter-spacing: -0.03em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    @media screen and (max-width: 450px) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 3rem;
+    }
+  }
+  .subtitle {
+    margin: 28px 0;
+    font-style: italic;
+    text-shadow: 10px;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+  .microtitle {
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+}

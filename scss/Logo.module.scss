@@ -1,0 +1,9 @@
+@import './main/variables';
+
+.svg {
+  width: 64px;
+  height: 64px;
+  g {
+    mix-blend-mode: darken;
+  }
+}

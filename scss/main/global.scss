@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+@import './variables';
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: $color-secondary;
+  background-color: $color-primary;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $color-accent;
+}
+
+.accent {
+  color: $color-accent;
+}
+
+.accent-underline {
+  color: $color-accent;
+  text-decoration: underline;
+}
+
+.accent-bold {
+  color: $color-accent;
+  font-weight: 800;
+}
+
+.accent-italic {
+  color: $color-accent;
+  font-style: italic;
+}

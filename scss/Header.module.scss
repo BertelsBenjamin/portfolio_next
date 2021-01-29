@@ -1,0 +1,45 @@
+@import './main/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+  .logo {
+    display: inline-block;
+    color: $color-secondary;
+    width: 50%;
+    padding: 16px 0;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  nav {
+    width: 50%;
+    padding: 16px 0;
+    margin: auto;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      padding: 0 15vw;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: $color-secondary;
+        padding: 0 5px;
+        a,
+        a:visited,
+        a:active {
+          text-decoration: none;
+          color: $color-accent;
+        }
+      }
+    }
+  }
+}
