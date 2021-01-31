@@ -3,6 +3,7 @@ import '../scss/main/reset.scss';
 import '../scss/main/global.scss';
 import '../node_modules/mono-icons/iconfont/icons.css';
 import Socials from '../components/Socials';
+import Face from '../components/Face';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Socials />
+      <Face />
     </>
   );
 }

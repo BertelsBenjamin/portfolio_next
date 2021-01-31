@@ -11,6 +11,14 @@ body {
   color: $color-secondary;
 }
 
+p {
+  font-size: 14px;
+}
+
+object {
+  pointer-events: none;
+}
+
 i[class^='mi-'] {
   color: $color-accent;
   font-weight: 900;

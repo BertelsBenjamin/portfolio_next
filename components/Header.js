@@ -6,9 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href='/'>
-          <Logo width='64px' height='64px' />
-        </Link>
+        <Logo width='64px' height='64px' />
       </div>
       <nav className={styles.nav}>
         <ul>

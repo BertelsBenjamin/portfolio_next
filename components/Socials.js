@@ -12,10 +12,7 @@ const Socials = () => {
           <object
             type='image/svg+xml'
             data='./github-alt.svg'
-            className='social'
-            onClick={() => {
-              goToLink('https://github.com/BertelsBenjamin');
-            }}
+            className={styles.social}
           >
             Github
           </object>
@@ -27,12 +24,7 @@ const Socials = () => {
           <object
             type='image/svg+xml'
             data='./linkedin-in.svg'
-            className='social'
-            onClick={() => {
-              goToLink(
-                'https://www.linkedin.com/in/benjamin-bertels-1a0b1763/'
-              );
-            }}
+            className={styles.social}
           >
             Linkedin
           </object>

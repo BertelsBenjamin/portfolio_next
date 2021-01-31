@@ -1,6 +1,15 @@
 .container {
-  margin: 15vh 10vw;
+  margin: 10vh 10vw;
   h1 {
     margin-bottom: 5vh;
+  }
+  .cta {
+    @media screen and (min-width: 600px) {
+      text-align: center;
+      margin-top: 8vh;
+    }
+  }
+  a {
+    text-decoration: underline;
   }
 }
