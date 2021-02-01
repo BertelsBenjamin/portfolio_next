@@ -5,16 +5,30 @@ const Work = ({ projects }) => {
   projects.map((project) => console.log(project.title));
   return (
     <>
-      <h1>Work</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project._id}>
-            <h2>{project.title}</h2>
-            <h3>{project.github_uri}</h3>
-            <p>{project.git_clone}</p>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.container}>
+        <h1>Work</h1>
+        <ul>
+          {projects.map((project) => (
+            <li key={project._id}>
+              <h2>{project.title}</h2>
+              <p>{project.description}</p>
+              <p>
+                <small>
+                  <a href={project.github_uri}>
+                    <object
+                      type='image/svg+xml'
+                      data='./github-alt.svg'
+                      className={styles.social}
+                    >
+                      Github
+                    </object>
+                  </a>
+                </small>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
