@@ -1,4 +1,5 @@
 import styles from '../scss/Home.module.scss';
+import Face from '../components/Face';
 import Link from 'next/link';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
             Hasselt <span className='accent'>||</span> Belgium
           </h4>
         </div>
+        <Face />
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import styles from '../scss/About.module.scss';
 import Link from 'next/link';
+import Face from '../components/Face';
 
 const About = () => {
   return (
@@ -24,6 +25,7 @@ const About = () => {
         <p className={styles.cta}>
           Want to work together? <Link href='/contact'>Get in touch.</Link>
         </p>
+        <Face />
       </div>
     </>
   );

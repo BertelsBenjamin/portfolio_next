@@ -2,7 +2,7 @@ import { connectToDatabase } from '../util/mongodb';
 import styles from '../scss/Work.module.scss';
 
 const Work = ({ projects }) => {
-  projects.map((project) => console.log(project.title));
+  projects.map((project) => console.log(project.technologies));
   return (
     <>
       <div className={styles.container}>
@@ -10,21 +10,41 @@ const Work = ({ projects }) => {
         <ul>
           {projects.map((project) => (
             <li key={project._id}>
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <p>
-                <small>
-                  <a href={project.github_uri}>
-                    <object
-                      type='image/svg+xml'
-                      data='./github-alt.svg'
-                      className={styles.social}
-                    >
-                      Github
-                    </object>
+              <h2 className={styles.title}>{project.title}</h2>
+              <div className={styles.links}>
+                {project.demo_uri ? (
+                  <a href={project.demo_uri} target='_blank'>
+                    <i className='mi-computer'></i>
                   </a>
-                </small>
-              </p>
+                ) : null}
+                <a href={project.github_uri} target='_blank'>
+                  <object
+                    type='image/svg+xml'
+                    data='./github-alt.svg'
+                    className={styles.social}
+                  >
+                    Github
+                  </object>
+                </a>
+              </div>
+              <p className={styles.description}>{project.description}</p>
+              <div className={styles.tech}>
+                {project.technologies.map((technology, index) => (
+                  <span
+                    key={(project._id += index)}
+                    className={styles.technology}
+                  >
+                    {technology} <span className='accent'>| </span>
+                  </span>
+                ))}
+              </div>
+              <div className={styles.tags}>
+                {project.tags
+                  ? project.tags.map((hash) => (
+                      <span className={styles.hash}>#{hash} </span>
+                    ))
+                  : null}
+              </div>
             </li>
           ))}
         </ul>
