@@ -1,7 +1,11 @@
-import React from 'react';
+import styles from '../scss/Articles.module.scss';
 
 const Blog = () => {
-  return <div>Blog</div>;
+  return (
+    <div className={styles.container}>
+      <h1>Coming soon...</h1>
+    </div>
+  );
 };
 
 export default Blog;

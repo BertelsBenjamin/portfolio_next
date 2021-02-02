@@ -16,7 +16,13 @@ const Work = ({ projects }) => {
                   <a href={project.demo_uri} target='_blank'>
                     <i className='mi-computer'></i>
                   </a>
-                ) : null}
+                ) : (
+                  <a
+                    href={`mailto:${process.env.EMAIL}?subject=${project.title}&body=Hi Benjamin,%0D%0A%0D%0AI would like to know more about your project "Patrimonium".%0D%0A%0D%0ACould you please contact me for a demo?%0D%0A%0D%0AKindest regards,%0D%0A%0D%0A`}
+                  >
+                    <i className='mi-email accent'></i>
+                  </a>
+                )}
                 <a href={project.github_uri} target='_blank'>
                   <object
                     type='image/svg+xml'

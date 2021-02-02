@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className={styles.heading}>
         <h1 className={styles.title}>Benjamin Bertels</h1>
-        <h2 className={styles.subtitle}>Full Stack Javascript Developer</h2>
+        <h2 className={styles.subtitle}>Javascript Developer</h2>
         <div>
           <h4 className={styles.microtitle}>
             Hasselt <span className='accent'>||</span> Belgium
