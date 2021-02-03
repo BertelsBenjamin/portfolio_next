@@ -1,6 +1,7 @@
 import styles from '../scss/Home.module.scss';
 import Face from '../components/Face';
 import Link from 'next/link';
+import Socials from '../components/Socials';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           </h4>
         </div>
         <Face />
+        <Socials />
       </div>
     </>
   );

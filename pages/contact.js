@@ -1,5 +1,6 @@
 import styles from '../scss/Contact.module.scss';
 import Face from '../components/Face';
+import Socials from '../components/Socials';
 
 const Contact = () => {
   return (
@@ -26,6 +27,7 @@ const Contact = () => {
         </div>
       </div>
       <Face />
+      <Socials />
     </div>
   );
 };

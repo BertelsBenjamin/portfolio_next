@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Header />
       <Component {...pageProps} />
-      <Socials />
     </>
   );
 }

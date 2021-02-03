@@ -1,6 +1,7 @@
 import styles from '../scss/About.module.scss';
 import Link from 'next/link';
 import Face from '../components/Face';
+import Socials from '../components/Socials';
 
 const About = () => {
   return (
@@ -26,6 +27,7 @@ const About = () => {
           Want to work together? <Link href='/contact'>Get in touch.</Link>
         </p>
         <Face />
+        <Socials />
       </div>
     </>
   );

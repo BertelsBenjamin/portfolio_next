@@ -7,7 +7,7 @@ const Work = ({ projects }) => {
     <>
       <div className={styles.container}>
         <h1>Work</h1>
-        <ul>
+        <ul className={styles.list}>
           {projects.map((project) => (
             <li key={project._id}>
               <h2 className={styles.title}>{project.title}</h2>

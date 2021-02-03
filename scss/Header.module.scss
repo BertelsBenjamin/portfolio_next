@@ -3,10 +3,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 20vh;
+  height: auto;
   margin-bottom: 5vh;
   @media screen and (max-width: 700px) {
     display: block;
+  }
+  @media screen and (max-width: 400px) {
+    margin-bottom: 8vh;
   }
   .active {
     border-bottom: 2px solid $color-accent;
@@ -47,7 +50,6 @@
         padding: 0 5px;
         @media screen and (max-width: 400px) {
           padding: 10px;
-          border-collapse: collapse;
           &:nth-child(even) {
             border-left: 1px solid $color-accent;
             text-align: left;
