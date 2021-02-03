@@ -37,7 +37,7 @@ const Work = ({ projects }) => {
               <div className={styles.tech}>
                 {project.technologies.map((technology, index) => (
                   <span
-                    key={(project._id += index)}
+                    key={`technology-${index}`}
                     className={styles.technology}
                   >
                     {technology} <span className='accent'>| </span>
@@ -46,8 +46,10 @@ const Work = ({ projects }) => {
               </div>
               <div className={styles.tags}>
                 {project.tags
-                  ? project.tags.map((hash) => (
-                      <span className={styles.hash}>#{hash} </span>
+                  ? project.tags.map((hash, index) => (
+                      <span key={`hash-${index}`} className={styles.hash}>
+                        #{hash}{' '}
+                      </span>
                     ))
                   : null}
               </div>
