@@ -1,8 +1,9 @@
+@import './variables';
+
 @font-face {
   font-family: 'Inter';
-  src: url('./Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  src: url('/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
-@import './variables';
 
 body {
   font-family: 'Inter', sans-serif;

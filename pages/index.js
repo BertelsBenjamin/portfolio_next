@@ -1,12 +1,13 @@
 import styles from '../scss/Home.module.scss';
 import Face from '../components/Face';
-import Link from 'next/link';
 import Socials from '../components/Socials';
+import { useSpring, animated } from 'react-spring';
 
 export default function Home() {
+  const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
     <>
-      <div className={styles.heading}>
+      <animated.div style={props} className={styles.heading}>
         <h1 className={styles.title}>Benjamin Bertels</h1>
         <h2 className={styles.subtitle}>Javascript Developer</h2>
         <div>
@@ -14,9 +15,9 @@ export default function Home() {
             Hasselt <span className='accent'>||</span> Belgium
           </h4>
         </div>
-        <Face />
-        <Socials />
-      </div>
+      </animated.div>
+      <Face />
+      <Socials />
     </>
   );
 }
