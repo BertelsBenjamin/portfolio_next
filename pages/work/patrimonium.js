@@ -7,7 +7,21 @@ import styles from '../../scss/Project.module.scss';
 const Baboos = ({ project }) => {
   return (
     <div className={styles.container}>
-      <h1>{project.title}</h1>
+      <div className={styles.heading}>
+        <h1 className={styles.title}>{project.title}</h1>
+        <div className={styles.actions}>
+          <a href={project.github_uri} target='_blank'>
+          <object
+            type='image/svg+xml'
+            data='../github-alt.svg'
+          >
+          </object>
+        </a>
+        {project.demo_uri ? <a href={project.demo_uri} target='_blank'>
+          <i className="mi-computer"></i>
+        </a> : null}
+        </div>
+      </div>
       {parse(project.description_full)}
     </div>
   );

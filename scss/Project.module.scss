@@ -1,3 +1,17 @@
 .container {
   padding: 2vh 8vw;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    .actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  .action {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+  }
+}
+  }
 }

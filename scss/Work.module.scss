@@ -29,16 +29,28 @@
       > * {
         padding: 1vh 1vw;
       }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 600px) {
         grid-template-areas:
-          'title title title links'
+          'title title links links'
           'desc desc desc desc'
           'tech tech tech tech'
           '. tags tags tags';
       }
+      @media screen and (max-width: 500px) {
+        grid-template-areas:
+          'title title title title'
+          'links links links links'
+          'desc desc desc desc'
+          'tech tech tech tech'
+          '. tags tags tags';
+      }
+
       .title {
         grid-area: title;
         color: $color-accent;
+        @media screen and (max-width: 500px) {
+          text-align: center;
+        }
       }
       .description_short {
         grid-area: desc;
