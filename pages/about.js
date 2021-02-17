@@ -6,6 +6,7 @@ import Socials from '../components/Socials';
 const About = () => {
   return (
     <>
+      <h1 className={styles.pageTitle}>About</h1>
       <div className={styles.container}>
         <ul className={styles.list}>
           <li>
@@ -16,9 +17,10 @@ const About = () => {
               I studied science, mathematics and modern languages. Outside of
               school, I played in bands and took piano lessons from the age of
               8. After finishing high school, I went to Group T in Leuven to
-              study <span className='accent'>engineering</span>. However, after
-              a year I quit and went to LUCA School of Arts to become a
-              classical pianist. After five years I graduated magna cum laude as{' '}
+              study <span className='accent'>industrial engineering</span>.
+              However, after a year my passion for music took over so I went to
+              LUCA School of Arts to become a classical pianist. After five
+              years I graduated magna cum laude as{' '}
               <span className='accent-bold'>
                 Master in Arts, Piano Performance
               </span>
@@ -35,14 +37,17 @@ const About = () => {
             <br></br>
             <p>
               When exploring different programming languages on my own, I got
-              hooked to Javascript. The syntax, the community, the amount of
-              packages, libraries and frameworks and the use of Javascript
-              outside of the web with Node.js as a platform (programming
-              Arduino's for example) got me into web development.
+              hooked to <span className='accent-bold'>Javascript</span>. The
+              syntax, the community, the amount of packages, libraries and
+              frameworks and the use of Javascript outside of the web with{' '}
+              <span className='accent-bold'>Node.js</span> as a platform
+              (programming Arduino's for example) got me into web development.
             </p>
             <br></br>
             <p>
-              So I changed from C# development to a two year course to become a{' '}
+              So I changed from{' '}
+              <span style={{ textDecoration: 'line-through' }}>C#</span> to a
+              two year course to become a{' '}
               <span className='accent-bold'>Front End Developer</span> at Syntra
               Limburg. After graduating in 2020, continuous self learning and a{' '}
               <u>LOT</u> of debugging, I am now further developing as a
@@ -95,7 +100,7 @@ const About = () => {
           <li>
             <h3>Web Development</h3>
             <p>
-              Since I'm a very curious guy, I will probably be{' '}
+              Since I'm a very studious guy, I will probably be{' '}
               <span className='accent-bold'>learning forever</span>. This
               natural mind-set comes in handy when attempting to tackle
               something as huge and flourishing as the environment and community
@@ -116,9 +121,12 @@ const About = () => {
               though. My favorite art form is music because it's abstract. A
               design is concrete and thus way more difficult for me to develop.
               However, seeing structures and relations between components became
-              my forte because I've put a lot of designs (Figma or AdobeXD) into
-              beautiful, re-usable HTML and CSS.
+              my forte because I've put a lot of designs (
+              <span className='accent'>Figma</span> or{' '}
+              <span className='accent'>Adobe XD</span>) into beautiful,
+              re-usable HTML and CSS.
             </p>
+            <br></br>
           </li>
         </ul>
         <div></div>
