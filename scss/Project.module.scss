@@ -1,17 +1,28 @@
+@import './main/variables';
 .container {
   padding: 2vh 8vw;
   .heading {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    .title {
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bolder;
+      margin: 20px 0;
+    }
     .actions {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  .action {
-    width: 24px;
-    height: 24px;
-    margin: 0 8px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      object {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
-}
+  .description_full {
+    text-align: justify;
   }
 }
